@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jishnu K M</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container-profile">
+        <img src="./assets/jishnu.png" alt="John Doe profile picture " />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jishnu K M</h1>
+        <p class="section__text__p2">Fullstack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/jishnu-km-44b343213'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/jishnukm9'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+          style="filter: grayscale(100%);"
+            src="./assets/jishnu2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Full Stack Developer (Python)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p><span style="font-weight:900;">B.Tech</span> in Electrical and Electronics Engineering<br /><span style="font-weight:900;">Diploma</span>  in Electrical and Electronics Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Experienced Python full stack developer with a passion for solving complex problems. 2+ years of experience creating elegant and efficient software solutions. Dedicated to delivering high-quality code that meets and exceeds user expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+    <section id="experience">
+      <!-- <p class="section__text__p1">Explore My</p> -->
+      <!-- <h1 class="title">Experience</h1> -->
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Experience</h2>
+           <div class="article-containerr">
+             
+              
+              <div style="display:flex;column-gap: 20px;margin-bottom:20px;">
+                <img
+                  src="./assets/job.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div style="text-align:left">
+                  <h3>Fullstack Developer</h3>
+                  <h5  style="margin-bottom:5px">Magnus Innovative Technical Services Pvt.Ltd</h5>
+                  <p style="font-size:15px;margin-bottom:5px">As a Fullstack Developer at Magnus Innovative Technical Services, I contributed to the development of an ERP software, tackling both frontend and backend components. This role allowed me to apply and enhance my programming skills across various technologies to ensure the ERP system was efficient, and robust</p>
+                  <p>2023 June - Present</p>
+                </div>
+              </div>
+              <div style="display:flex;column-gap: 20px;margin-bottom:20px;">
+                <img
+                  src="./assets/job.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div style="text-align:left">
+                  <h3>Application Developer</h3>
+                  <h5 style="margin-bottom:5px">Confluex Marketing Pvt.Ltd</h5>
+                  <p style="font-size:15px;margin-bottom:5px">As a fresher in IT, I had the privilege of working in a dynamic startup environment, which provided me with a wealth of learning opportunities. I was involved in developing multiple projects, including a car booking platform and a social media automation platform. This gave me hands-on experience in software development and exposed me to different aspects of project management.</p>
+                  <p>2022 May -2023 June</p>
+                </div>
+              </div>
+              <div style="display:flex;column-gap: 20px;margin-bottom:20px;">
+                <img
+                  src="./assets/job.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div style="text-align:left">
+                  <h3>Electrical Site Engineer</h3>
+                  <h5  style="margin-bottom:5px">Sabi Engineering Company</h5>
+                  <p style="font-size:15px;margin-bottom:5px">In this role, I managed and executed electrical projects, developed project plans, and coordinated team tasks. I meticulously recorded work progress, managed resources efficiently, and collaborated closely with project managers to ensure timely project completion.</p>
+                  <p>2018 March -2021 November</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Education</h2>
+            <div class="article-containerr">
+              <div style="display:flex;column-gap: 20px;margin-bottom:20px;">
+                <img
+                  src="./assets/education-icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div style="text-align:left">
+                  <h3>B.Tech</h3>
+                  <h5>College of Engineering Vadakara</h5>
+                  <p>Electrical and Electronics Engineering</p>
+                  <p>2013 - 2016</p>
+                </div>
+              </div>
+              
+              <div style="display:flex;column-gap: 20px;margin-bottom:20px;">
+                <img
+                  src="./assets/education-icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div style="text-align:left">
+                  <h3>Diploma</h3>
+                  <h5>Kerala Government Polytechnic College Kozhikkode</h5>
+                  <p>Electrical and Electronics Engineering</p>
+                  <p>2010 - 2013</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      /> -->
+    </section>
+
+    <section id="skills" >
+      <p class="section__text__p1">Know My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <!-- <h2 class="experience-sub-title">Frontend Development</h2> -->
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/python.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/django.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/flask.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flask</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/postgresql.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mongodb.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mongodb</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/git.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & Github</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/swagger.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Swagger</h3>
+                  <p>Experianced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/sqlite.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sqlite</h3>
+                  <p>Experianced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/shopify.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Shopify</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/linux.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                  <p>Basic <span style="color:#fff;">Basic</span>
+                  </p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <!-- <h2 class="experience-sub-title">Frontend Development</h2> -->
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/html.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/css.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/react.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/javascript.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/jquery.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jquery</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+             
+              <article>
+                <img
+                  src="./assets/sass.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sass</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/bootstrap.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/wordpress.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Wordpress</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/canva.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Canva</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/tailwind.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      /> -->
+    </section>
+
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/echomesh.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Echomesh</h2>
+            <p style="text-align:left">EchoMesh is a dynamic social media app that allows users to engage through picture and video posts, likes, comments, and messages. Built using Django with Django Channels for real-time messaging and notifications. The frontend is crafted with Bootstrap for responsive design, enhanced with JavaScript for robust functionality, making EchoMesh an appealing and user-friendly platform for social interaction.</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/jishnukm9/echomesh'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://echomesh.onrender.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Rentomobile.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Rentomobile</h2>
+            <p style="text-align:left">Rentomobile is a user-friendly car booking platform built with React, offering seamless navigation and efficient data management. It features seamless integration with the Avis Car Booking API, providing a broad selection of vehicles and real-time booking capabilities. The use of technologies like React Router, React Query, and the Context API enhances user experience by ensuring smooth transitions and updated information</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/jishnukm9/rentomobile'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://rentomobile.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <button
+                class="btn btn-color-2 project-btn "
+                style="height:20px; align-self: center;  display:flex;align-items: center;justify-content: center; "
+                onclick="location.href='https://github.com/jishnukm9/'"
+              >
+                See More
+              </button>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Codecrafty</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/jishnukm9/codecrafty'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://codecrafty.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> -->
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jishnukm2010@gmail.com">jishnukm2010@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/jishnu-km-44b343213">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Jishnu K M. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
